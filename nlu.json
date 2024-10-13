@@ -24,31 +24,6 @@
     }
   },
   "intents" : [ {
-    "path" : "/Данные для сервиса",
-    "enabled" : true,
-    "shared" : false,
-    "phrases" : [ ],
-    "classificationRules" : {
-      "refs" : [ {
-        "entityName" : "duckling.phone-number",
-        "predicate" : "CONTAINS"
-      }, {
-        "entityName" : "pymorphy.name",
-        "predicate" : "CONTAINS"
-      }, {
-        "entityName" : "mystem.famn",
-        "predicate" : "CONTAINS"
-      }, {
-        "entityName" : "mystem.patrn",
-        "predicate" : "CONTAINS"
-      }, {
-        "entityName" : "pymorphy.abbr",
-        "predicate" : "CONTAINS"
-      } ]
-    },
-    "patterns" : [ ],
-    "priority" : 0
-  }, {
     "path" : "/Кто ты",
     "enabled" : true,
     "shared" : false,
@@ -141,15 +116,234 @@
     "patterns" : [ ],
     "priority" : 0
   } ],
-  "entities" : [ ],
-  "enabledSystemEntities" : [ "mystem.patrn", "mystem.famn", "pymorphy.abbr", "pymorphy.name", "pymorphy.patr", "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
+  "entities" : [ {
+    "entity" : {
+      "name" : "Марка_автомобиля",
+      "enabled" : true,
+      "shared" : false,
+      "type" : "annotation",
+      "priority" : 1,
+      "noSpelling" : true,
+      "noMorph" : false,
+      "phoneticSearch" : false,
+      "fuzzySearch" : false,
+      "client" : false,
+      "hidden" : false
+    },
+    "records" : [ {
+      "type" : "synonyms",
+      "rule" : [ "Toyota", "Тойота" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Honda", "Хонда" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Nissan", "Ниссан" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Ford", "Форд" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Chevrolet", "Шевроле" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "BMW", "БМВ" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Mercedes-Benz", "Мерседес-Бенц" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Audi", "Ауди" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Volkswagen", "Фольксваген" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Hyundai", "Хендай", "Хундай" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Kia", "Киа" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Mazda", "Мазда" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Subaru", "Субару" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Lexus", "Лексус" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Volvo", "Вольво" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Mitsubishi", "Митсубиси", "Митсубиши" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Porsche", "Порше" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Jaguar", "Ягуар" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Land Rover", "Ленд Ровер" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Jeep", "Джип" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Chrysler", "Крайслер" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Dodge", "Додж" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Fiat", "Фиат" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Peugeot", "Пежо" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Renault", "Рено" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Citroen", "Ситроен" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Opel", "Опель" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Skoda", "Шкода" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "SEAT", "Сеат" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Infiniti", "Инфинити" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Acura", "Акура" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Cadillac", "Кадиллак" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Buick", "Бьюик" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "GMC", "ДжиЭмСи" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Lincoln", "Линкольн" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Tesla", "Тесла" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Maserati", "Мазерати" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Alfa Romeo", "Альфа Ромео" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Mini", "Мини" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Smart", "Смарт" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Suzuki", "Сузуки" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Lada", "Лада", "ВАЗ" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "GAZ", "ГАЗ" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "UAZ", "УАЗ" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Moskvitch", "Москвич", "АЗЛК" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "ZAZ", "ЗАЗ" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Datsun", "Датсун" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Geely", "Джили" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Chery", "Чери" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Haval", "Хавейл" ],
+      "value" : ""
+    }, {
+      "type" : "synonyms",
+      "rule" : [ "Great Wall", "Грейт Волл" ],
+      "value" : ""
+    } ]
+  } ],
+  "enabledSystemEntities" : [ "mystem.persn", "mystem.patrn", "mystem.famn", "pymorphy.abbr", "pymorphy.name", "pymorphy.patr", "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
   "spellerDictionary" : [ ],
   "systemEntities" : [ {
     "name" : "mystem.geo",
     "enabled" : false
   }, {
     "name" : "mystem.persn",
-    "enabled" : false
+    "enabled" : true
   }, {
     "name" : "mystem.obsc",
     "enabled" : false

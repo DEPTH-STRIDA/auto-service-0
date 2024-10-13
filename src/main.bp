@@ -94,8 +94,8 @@
     "y" : 854
   }, {
     "id" : "/Service",
-    "x" : 764,
-    "y" : -318
+    "x" : 948,
+    "y" : -370
   }, {
     "id" : "/GoodBey",
     "name" : "GoodBey",
@@ -145,8 +145,8 @@
   }, {
     "id" : "/Confirmation",
     "name" : "Confirmation",
-    "x" : 672,
-    "y" : 590
+    "x" : 806,
+    "y" : 646
   }, {
     "id" : "/SendRequest",
     "name" : "SendRequest",
@@ -165,12 +165,12 @@
   }, {
     "id" : "/Analyzer",
     "name" : "Analyzer",
-    "x" : 1419,
-    "y" : -73
+    "x" : 1412,
+    "y" : 268
   }, {
     "id" : "/Menu",
     "name" : "ReturnTo",
-    "x" : -263,
-    "y" : -252
+    "x" : 491,
+    "y" : 144
   } ]
 }

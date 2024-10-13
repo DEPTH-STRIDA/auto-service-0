@@ -54,11 +54,11 @@ theme: /
             познакомиться!
         go!: /ReturnTo
     state: Service
-        q!:то
-        q!:тех
-        q!:*тех*
-        q!:*обс*
-        q!:*смотр*
+        q!: то
+        q!: тех
+        q!: *тех*
+        q!: *обс*
+        q!: *смотр*
         script:
             $session.lastState = "/Service"
         if: CheckRequest()
@@ -66,7 +66,7 @@ theme: /
             go!: /Confirmation
         else: 
             a: a: {{GetServiceMessage()}}
-            go!: /Analyzer
+            go: /Analyzer
         event: noMatch || toState = "/Service"
     state: ReturnTo
         if: $session.lastState && $session.lastState === "/Service"
@@ -82,9 +82,9 @@ theme: /
             method = PUT
             dataType = 
             body = {
-                "name":"{{$user.name}}",
-                "phone":"{{$user.phone}}",
-                "car":"{{$user.car}}"
+                "name":"{{$client.name}}",
+                "phone":"{{$client.phone}}",
+                "car":"{{$client.car}}"
                 }
             timeout = 0
             headers = [{"name":"","value":""}]
@@ -106,23 +106,41 @@ theme: /
         buttons:
             "Записаться на ТО" -> /Service
     state: Analyzer
-    intent: /sys/aimylogic/ru/names
-    intent: /sys/aimylogic/ru/phone
-    intent: /sys/aimylogic/ru/car
-    script:
-        if ($intent.name === "/sys/aimylogic/ru/names" && $entities.name) {
-            $session.name = $entities.name[0].value;
-        }
-        if ($intent.name === "/sys/aimylogic/ru/phone" && $entities.phone) {
-            $session.phone = $entities.phone[0].value;
-        }
-        if ($intent.name === "/sys/aimylogic/ru/car" && $entities.car) {
-            $session.car = $entities.car[0].value;
-        }
-    if: CheckRequest()
-        a: {{GetReadyMessage()}}
-        go!: /Confirmation
-    else:
-        a: {{GetServiceMessage()}}
-    go!: /Service
-        
+        q: * || fromState = "/Analyzer"
+        script:
+            // Список нужных системных сущностей
+            var targetEntities = ["pymorphy.name", "mystem.famn", "pymorphy.patr", "duckling.phone-number", "Марка_автомобиля"];
+            
+            // Объект для отслеживания, какие сущности уже были найдены
+            var foundTypes = {};
+            
+            // Фильтрация сущностей из $entities
+            $entities.forEach(function(entity) {
+                if (targetEntities.indexOf(entity.pattern) !== -1 && !foundTypes[entity.pattern]) {
+                    foundTypes[entity.pattern] = true;
+                    
+                    switch(entity.pattern) {
+                        case "pymorphy.name":
+                            $client.firstName = capitalize(entity.value);
+                            break;
+                        case "mystem.famn":
+                            $client.lastName = capitalize(entity.value);
+                            break;
+                        case "pymorphy.patr":
+                            $client.patronymic = capitalize(entity.value);
+                            break;
+                        case "duckling.phone-number":
+                            $client.phone = entity.value;
+                            break;
+                        case "Марка_автомобиля":
+                            $client.car = entity.value;
+                            break;
+                    }
+                }
+            });
+    
+        if: CheckRequest()
+            a: {{GetReadyMessage()}}
+            go!: /Confirmation
+        else: 
+            a: {{GetServiceMessage()}}
