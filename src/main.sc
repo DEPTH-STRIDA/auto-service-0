@@ -4,7 +4,6 @@ require: slotfilling/slotFilling.sc
 require: generalCommunication.sc
 
 theme: /
-
     state: Start || sessionResult = "Сценарий начинается отсюда", sessionResultColor = "#143AD1"
         q!: $regex</start>
         a: 🚗 Добро пожаловать в бот нашего автосервиса! 🔧
@@ -21,6 +20,10 @@ theme: /
     state: Bye
         a: Пока-пока!
 
+    state: Hello || noContext = true
+        intent: /sys/aimylogic/ru/hello
+        a: Здравствуйте!
+
     state: NoMatch
         event!: noMatch
-        a: Я не Вас не понял. Пожалуйста, перефразируйте вопрос.
+        a: Я не понял. Пожалуйста, перефразируйте вопрос.
