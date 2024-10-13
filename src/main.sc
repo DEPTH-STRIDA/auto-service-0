@@ -1,7 +1,6 @@
 require: slotfilling/slotFilling.sc
   module = sys.zb-common
   
-require: generalCommunication.sc
 
 theme: /
     state: Start || sessionResult = "Сценарий начинается отсюда", sessionResultColor = "#143AD1"
@@ -32,7 +31,7 @@ theme: /
         random: 
             a: Отлично! А у вас?
             a: Отлично! А вы?
-        go!: /HowAreYouReaction
+        go!: HowAreYouReaction
 
     state: HowAreYouReaction
         state: GoodMood
