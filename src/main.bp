@@ -1,8 +1,8 @@
 {
   "positions" : [ {
     "id" : "/Start",
-    "x" : 162,
-    "y" : -135
+    "x" : -1198,
+    "y" : -536
   }, {
     "id" : "/Bye",
     "x" : 139,
@@ -68,8 +68,8 @@
   }, {
     "id" : "/NoMatch",
     "name" : "NoMatch",
-    "x" : 134,
-    "y" : -672
+    "x" : -1131,
+    "y" : -1376
   }, {
     "id" : "/",
     "x" : 17,
@@ -77,43 +77,100 @@
   }, {
     "id" : "/Hello",
     "name" : "Hello",
-    "x" : 86,
-    "y" : -1547
+    "x" : -2088,
+    "y" : -2419
   }, {
-    "id" : "/HowAreYou",
-    "name" : "HowAreYou",
-    "x" : 87,
-    "y" : -1998
-  }, {
-    "id" : "/HowAreYou/HowAreYouReaction",
+    "id" : "/UnknownReaction",
     "name" : "HowAreYouReaction",
-    "x" : 290,
-    "y" : 589
-  }, {
-    "id" : "/HowAreYouReaction",
-    "name" : "HowAreYouReaction",
-    "x" : 500,
-    "y" : -2011
+    "x" : -374,
+    "y" : -3245
   }, {
     "id" : "/HowAreYouReaction/GoodMood",
-    "x" : 658,
-    "y" : 870
+    "x" : 605,
+    "y" : 850
   }, {
     "id" : "/HowAreYouReaction/BadMood",
-    "x" : 276,
-    "y" : 852
-  }, {
-    "id" : "/HowAreYouReaction/Neutral",
-    "x" : 280,
-    "y" : 1320
+    "x" : 261,
+    "y" : 854
   }, {
     "id" : "/Service",
-    "x" : 517,
-    "y" : -155
+    "x" : 764,
+    "y" : -318
   }, {
     "id" : "/GoodBey",
     "name" : "GoodBey",
     "x" : 398,
     "y" : -1548
+  }, {
+    "id" : "/GoodBye",
+    "x" : -1712,
+    "y" : -2395
+  }, {
+    "id" : "/HowAreYou",
+    "name" : "HowAreYou",
+    "x" : -1038,
+    "y" : -3036
+  }, {
+    "id" : "/Mat",
+    "x" : 650,
+    "y" : -35
+  }, {
+    "id" : "/BadMood",
+    "x" : -398,
+    "y" : -2434
+  }, {
+    "id" : "/GoodMood",
+    "x" : -372,
+    "y" : -2869
+  }, {
+    "id" : "/YourName",
+    "name" : "YourName",
+    "x" : -1131,
+    "y" : -2054
+  }, {
+    "id" : "/YourNameReaction",
+    "name" : "YourNameReaction",
+    "x" : -402,
+    "y" : -2039
+  }, {
+    "id" : "/SendRequest",
+    "name" : "Service",
+    "x" : 222,
+    "y" : -1032
+  }, {
+    "id" : "/ReturnTo",
+    "name" : "ReturnToService",
+    "x" : -299,
+    "y" : -1175
+  }, {
+    "id" : "/Confirmation",
+    "name" : "Confirmation",
+    "x" : 672,
+    "y" : 590
+  }, {
+    "id" : "/SendRequest",
+    "name" : "SendRequest",
+    "x" : 775,
+    "y" : 1068
+  }, {
+    "id" : "/ErrorRequest",
+    "name" : "Ошибка получения",
+    "x" : 67,
+    "y" : 1082
+  }, {
+    "id" : "/SuccesRequest",
+    "name" : "Ошибка получения_1",
+    "x" : 420,
+    "y" : 1074
+  }, {
+    "id" : "/Analyzer",
+    "name" : "Analyzer",
+    "x" : 1419,
+    "y" : -73
+  }, {
+    "id" : "/Menu",
+    "name" : "ReturnTo",
+    "x" : -263,
+    "y" : -252
   } ]
 }

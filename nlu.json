@@ -24,10 +24,59 @@
     }
   },
   "intents" : [ {
-    "path" : "/Кто ты",
+    "path" : "/Данные для сервиса",
     "enabled" : true,
     "shared" : false,
     "phrases" : [ ],
+    "classificationRules" : {
+      "refs" : [ {
+        "entityName" : "duckling.phone-number",
+        "predicate" : "CONTAINS"
+      }, {
+        "entityName" : "pymorphy.name",
+        "predicate" : "CONTAINS"
+      }, {
+        "entityName" : "mystem.famn",
+        "predicate" : "CONTAINS"
+      }, {
+        "entityName" : "mystem.patrn",
+        "predicate" : "CONTAINS"
+      }, {
+        "entityName" : "pymorphy.abbr",
+        "predicate" : "CONTAINS"
+      } ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/Кто ты",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "кто ты?"
+    }, {
+      "text" : "ты кто?"
+    }, {
+      "text" : "как тебя зовут?"
+    }, {
+      "text" : "какое у тебя имя?"
+    }, {
+      "text" : "представься, пожалуйста"
+    }, {
+      "text" : "можешь представиться?"
+    }, {
+      "text" : "твое имя?"
+    }, {
+      "text" : "кто ты такой?"
+    }, {
+      "text" : "ты бот или человек?"
+    }, {
+      "text" : "с кем я разговариваю?"
+    }, {
+      "text" : "как тебя называть?"
+    }, {
+      "text" : "назови себя"
+    } ],
     "classificationRules" : {
       "refs" : [ ]
     },
@@ -38,15 +87,15 @@
     "enabled" : true,
     "shared" : false,
     "phrases" : [ {
-      "text" : "Как дела?"
+      "text" : "как дела?"
     }, {
-      "text" : "Как поживаешь?"
+      "text" : "как поживаешь?"
     }, {
-      "text" : "Как жизнь?"
+      "text" : "как жизнь?"
     }, {
-      "text" : "Что нового?"
+      "text" : "что нового?"
     }, {
-      "text" : "Как настроение?"
+      "text" : "как настроение?"
     }, {
       "text" : "че как?"
     }, {
@@ -59,9 +108,41 @@
     },
     "patterns" : [ ],
     "priority" : 0
+  }, {
+    "path" : "/Меню",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "Покажи меню"
+    }, {
+      "text" : "Открой меню"
+    }, {
+      "text" : "Что ты умеешь?"
+    }, {
+      "text" : "Список команд"
+    }, {
+      "text" : "Помощь"
+    }, {
+      "text" : "Команды"
+    }, {
+      "text" : "Дай список опций"
+    }, {
+      "text" : "Что можно сделать?"
+    }, {
+      "text" : "Какие услуги доступны?"
+    }, {
+      "text" : "Навигация"
+    }, {
+      "text" : "Инструкции"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
   } ],
   "entities" : [ ],
-  "enabledSystemEntities" : [ "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
+  "enabledSystemEntities" : [ "mystem.patrn", "mystem.famn", "pymorphy.abbr", "pymorphy.name", "pymorphy.patr", "duckling.number", "duckling.time", "duckling.duration", "duckling.phone-number", "duckling.email", "duckling.url" ],
   "spellerDictionary" : [ ],
   "systemEntities" : [ {
     "name" : "mystem.geo",
@@ -74,10 +155,10 @@
     "enabled" : false
   }, {
     "name" : "mystem.patrn",
-    "enabled" : false
+    "enabled" : true
   }, {
     "name" : "mystem.famn",
-    "enabled" : false
+    "enabled" : true
   }, {
     "name" : "pymorphy.romn",
     "enabled" : false
@@ -92,16 +173,16 @@
     "enabled" : false
   }, {
     "name" : "pymorphy.abbr",
-    "enabled" : false
+    "enabled" : true
   }, {
     "name" : "pymorphy.name",
-    "enabled" : false
+    "enabled" : true
   }, {
     "name" : "pymorphy.surn",
     "enabled" : false
   }, {
     "name" : "pymorphy.patr",
-    "enabled" : false
+    "enabled" : true
   }, {
     "name" : "pymorphy.geox",
     "enabled" : false

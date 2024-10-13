@@ -1,4 +1,30 @@
 {
   "version" : 1,
-  "stickers" : { }
+  "stickers" : {
+    "4b8542d8-5b93-42fb-9668-6623e8554579" : {
+      "id" : "4b8542d8-5b93-42fb-9668-6623e8554579",
+      "content" : "\"Переходник\" между различными состояниями.",
+      "fontSize" : 30,
+      "color" : "yellow",
+      "position" : {
+        "x" : 66,
+        "y" : -1292
+      },
+      "stagePath" : "/",
+      "connection" : {
+        "position" : "left",
+        "statePath" : "/ReturnTo"
+      },
+      "history" : {
+        "createdBy" : {
+          "userId" : 288864800,
+          "time" : 1728826450617
+        },
+        "lastUpdatedBy" : {
+          "userId" : 288864800,
+          "time" : 1728831234574
+        }
+      }
+    }
+  }
 }
