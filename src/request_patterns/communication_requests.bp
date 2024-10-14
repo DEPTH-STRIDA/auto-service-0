@@ -2,22 +2,22 @@
   "positions" : [ {
     "id" : "/RequestHello",
     "x" : 290,
-    "y" : 1261
+    "y" : 4614
   }, {
     "id" : "/RequestHowAreYou",
     "x" : 290,
-    "y" : 1868
+    "y" : 5221
   }, {
     "id" : "/RequestYourName",
     "x" : 290,
-    "y" : 656
+    "y" : 5863
   }, {
     "id" : "/RequestGoodBye",
-    "x" : 290,
-    "y" : 2473
+    "x" : 1850,
+    "y" : 7171
   }, {
     "id" : "/RequestUserName",
-    "x" : 1860,
-    "y" : 791
+    "x" : 1850,
+    "y" : 5863
   } ]
 }

@@ -1,20 +1,20 @@
 {
   "positions" : [ {
     "id" : "/ResponseReadyMessage",
-    "x" : 1850,
-    "y" : 3041
+    "x" : 2630,
+    "y" : 7517
   }, {
     "id" : "/ResponseServiceMessage",
-    "x" : 3410,
-    "y" : 3758
+    "x" : 2630,
+    "y" : 8141
   }, {
     "id" : "/ResponseSuccessRequest",
-    "x" : 3410,
-    "y" : 4378
+    "x" : 5750,
+    "y" : 7486
   }, {
     "id" : "/ResponseErrorRequest",
-    "x" : 3410,
-    "y" : 5032
+    "x" : 5750,
+    "y" : 5422
   }, {
     "id" : "/DeletePatronymic",
     "x" : 1070,
@@ -37,31 +37,31 @@
     "y" : 10146
   }, {
     "id" : "/ResponseDeleteCar",
-    "x" : 1070,
-    "y" : 9391
+    "x" : 3410,
+    "y" : 4793
   }, {
     "id" : "/ResponseDeletePhone",
-    "x" : 1070,
-    "y" : 8782
+    "x" : 3410,
+    "y" : 4116
   }, {
     "id" : "/ResponseService",
-    "x" : 1850,
-    "y" : 4412
+    "x" : 4190,
+    "y" : 3439
   }, {
     "id" : "/ResponseSendRequest",
-    "x" : 2630,
-    "y" : 4705
+    "x" : 4970,
+    "y" : 6705
   }, {
     "id" : "/ResponseDeletePatronymic",
-    "x" : 1070,
-    "y" : 6955
+    "x" : 3410,
+    "y" : 2085
   }, {
     "id" : "/ResponseDeleteLastName",
-    "x" : 1070,
-    "y" : 7564
+    "x" : 3410,
+    "y" : 2762
   }, {
     "id" : "/ResponseDeleteFirstName",
-    "x" : 1070,
-    "y" : 8173
+    "x" : 3410,
+    "y" : 3439
   } ]
 }

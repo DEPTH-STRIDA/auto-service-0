@@ -1,27 +1,27 @@
 {
   "positions" : [ {
     "id" : "/RequestService",
-    "x" : 1070,
-    "y" : 4412
+    "x" : 3410,
+    "y" : 700
   }, {
     "id" : "/RequestDeletePatronymic",
-    "x" : 290,
-    "y" : 6955
+    "x" : 2630,
+    "y" : 2085
   }, {
     "id" : "/RequestDeleteLastName",
-    "x" : 290,
-    "y" : 7564
+    "x" : 2630,
+    "y" : 2762
   }, {
     "id" : "/RequestDeleteFirstName",
-    "x" : 290,
-    "y" : 8173
+    "x" : 2630,
+    "y" : 3439
   }, {
     "id" : "/RequestDeletePhone",
-    "x" : 290,
-    "y" : 8782
+    "x" : 2630,
+    "y" : 4116
   }, {
     "id" : "/RequestDeleteCar",
-    "x" : 290,
-    "y" : 9391
+    "x" : 2630,
+    "y" : 4793
   } ]
 }
