@@ -1,0 +1,39 @@
+{
+  "positions" : [ {
+    "id" : "/",
+    "x" : 17,
+    "y" : 12
+  }, {
+    "id" : "/ServiceIncluded",
+    "x" : 290,
+    "y" : 10231
+  }, {
+    "id" : "/ServiceDuration",
+    "x" : 290,
+    "y" : 9523
+  }, {
+    "id" : "/ServiceDiscounts",
+    "x" : 290,
+    "y" : 8832
+  }, {
+    "id" : "/CarProblem",
+    "x" : 1070,
+    "y" : 9914
+  }, {
+    "id" : "/WhyNeedService",
+    "x" : 1850,
+    "y" : 9495
+  }, {
+    "id" : "/CostOfService",
+    "x" : 290,
+    "y" : 6725
+  }, {
+    "id" : "/WhenToService",
+    "x" : 290,
+    "y" : 7449
+  }, {
+    "id" : "/ComplaintOrDamage",
+    "x" : 290,
+    "y" : 8156
+  } ]
+}

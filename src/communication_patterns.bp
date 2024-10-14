@@ -1,0 +1,40 @@
+{
+  "positions" : [ {
+    "id" : "/",
+    "x" : 17,
+    "y" : 12
+  }, {
+    "id" : "/Hello",
+    "x" : 290,
+    "y" : 651
+  }, {
+    "id" : "/HowAreYou",
+    "x" : 290,
+    "y" : 1918
+  }, {
+    "id" : "/HowAreYouResponse",
+    "x" : 694,
+    "y" : 1228
+  }, {
+    "id" : "/YourName",
+    "x" : 290,
+    "y" : 2662
+  }, {
+    "id" : "/UserName",
+    "x" : 290,
+    "y" : 2636
+  }, {
+    "id" : "/GoodBye",
+    "x" : 290,
+    "y" : 1253
+  }, {
+    "id" : "/YourName/WaitNameResponse",
+    "x" : 278,
+    "y" : 695
+  }, {
+    "id" : "/YourName/OnNameResponse",
+    "name" : "OnNameResponse",
+    "x" : 656,
+    "y" : 684
+  } ]
+}

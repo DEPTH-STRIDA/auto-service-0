@@ -1,8 +1,8 @@
 {
   "positions" : [ {
     "id" : "/Start",
-    "x" : -1198,
-    "y" : -536
+    "x" : 1070,
+    "y" : 3970
   }, {
     "id" : "/Bye",
     "x" : 139,
@@ -68,8 +68,8 @@
   }, {
     "id" : "/NoMatch",
     "name" : "NoMatch",
-    "x" : -1131,
-    "y" : -1376
+    "x" : 1070,
+    "y" : 8068
   }, {
     "id" : "/",
     "x" : 17,
@@ -94,8 +94,8 @@
     "y" : 854
   }, {
     "id" : "/Service",
-    "x" : 948,
-    "y" : -370
+    "x" : 2451,
+    "y" : 6402
   }, {
     "id" : "/GoodBey",
     "name" : "GoodBey",
@@ -103,8 +103,8 @@
     "y" : -1548
   }, {
     "id" : "/GoodBye",
-    "x" : -1712,
-    "y" : -2395
+    "x" : -1722,
+    "y" : -2427
   }, {
     "id" : "/HowAreYou",
     "name" : "HowAreYou",
@@ -140,37 +140,93 @@
   }, {
     "id" : "/ReturnTo",
     "name" : "ReturnToService",
-    "x" : -299,
-    "y" : -1175
-  }, {
-    "id" : "/Confirmation",
-    "name" : "Confirmation",
-    "x" : 806,
-    "y" : 646
+    "x" : -90,
+    "y" : -1147
   }, {
     "id" : "/SendRequest",
     "name" : "SendRequest",
-    "x" : 775,
-    "y" : 1068
+    "x" : 4190,
+    "y" : 6176
   }, {
     "id" : "/ErrorRequest",
     "name" : "Ошибка получения",
-    "x" : 67,
-    "y" : 1082
+    "x" : 4970,
+    "y" : 5909
   }, {
     "id" : "/SuccesRequest",
     "name" : "Ошибка получения_1",
-    "x" : 420,
-    "y" : 1074
+    "x" : 1894,
+    "y" : 1557
   }, {
     "id" : "/Analyzer",
     "name" : "Analyzer",
-    "x" : 1412,
-    "y" : 268
+    "x" : 3410,
+    "y" : 6176
   }, {
     "id" : "/Menu",
     "name" : "ReturnTo",
-    "x" : 491,
-    "y" : 144
+    "x" : 1747,
+    "y" : 4706
+  }, {
+    "id" : "/DeletePatronymic",
+    "name" : "DeletePatronymic",
+    "x" : 2457,
+    "y" : 745
+  }, {
+    "id" : "/DeleteLastName",
+    "name" : "DeleteLastName",
+    "x" : 2458,
+    "y" : 398
+  }, {
+    "id" : "/DeleteFirstName",
+    "name" : "DeleteFirstName",
+    "x" : 2774,
+    "y" : 399
+  }, {
+    "id" : "/DeletePhone",
+    "name" : "DeletePhone",
+    "x" : 2791,
+    "y" : 742
+  }, {
+    "id" : "/DeleteCar",
+    "name" : "DeleteCar",
+    "x" : 3134,
+    "y" : 397
+  }, {
+    "id" : "/ServiceIncluded",
+    "x" : 982,
+    "y" : -2670
+  }, {
+    "id" : "/ServiceDuration",
+    "x" : 1285,
+    "y" : -2669
+  }, {
+    "id" : "/ServiceDiscounts",
+    "x" : 1602,
+    "y" : -2672
+  }, {
+    "id" : "/CarProblem",
+    "x" : 973,
+    "y" : -2201
+  }, {
+    "id" : "/WhyNeedService",
+    "x" : 1539,
+    "y" : -2205
+  }, {
+    "id" : "/ComplaintOrDamage",
+    "x" : 2538,
+    "y" : -2678
+  }, {
+    "id" : "/WhenToService",
+    "x" : 2236,
+    "y" : -2671
+  }, {
+    "id" : "/CostOfService",
+    "x" : 1931,
+    "y" : -2671
+  }, {
+    "id" : "/SuccessRequest",
+    "x" : 1070,
+    "y" : 8730
   } ]
 }
