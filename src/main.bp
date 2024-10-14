@@ -1,8 +1,8 @@
 {
   "positions" : [ {
     "id" : "/Start",
-    "x" : 1070,
-    "y" : 3970
+    "x" : 290,
+    "y" : 738
   }, {
     "id" : "/Bye",
     "x" : 139,
@@ -68,8 +68,8 @@
   }, {
     "id" : "/NoMatch",
     "name" : "NoMatch",
-    "x" : 1070,
-    "y" : 8068
+    "x" : 290,
+    "y" : 1429
   }, {
     "id" : "/",
     "x" : 17,
@@ -94,8 +94,8 @@
     "y" : 854
   }, {
     "id" : "/Service",
-    "x" : 2451,
-    "y" : 6402
+    "x" : 3410,
+    "y" : 1084
   }, {
     "id" : "/GoodBey",
     "name" : "GoodBey",
@@ -145,13 +145,13 @@
   }, {
     "id" : "/SendRequest",
     "name" : "SendRequest",
-    "x" : 4190,
-    "y" : 6176
+    "x" : 5750,
+    "y" : 1084
   }, {
     "id" : "/ErrorRequest",
     "name" : "Ошибка получения",
-    "x" : 4970,
-    "y" : 5909
+    "x" : 4196,
+    "y" : 6266
   }, {
     "id" : "/SuccesRequest",
     "name" : "Ошибка получения_1",
@@ -160,13 +160,13 @@
   }, {
     "id" : "/Analyzer",
     "name" : "Analyzer",
-    "x" : 3410,
-    "y" : 6176
+    "x" : 4190,
+    "y" : 1084
   }, {
     "id" : "/Menu",
     "name" : "ReturnTo",
-    "x" : 1747,
-    "y" : 4706
+    "x" : 1850,
+    "y" : 2041
   }, {
     "id" : "/DeletePatronymic",
     "name" : "DeletePatronymic",

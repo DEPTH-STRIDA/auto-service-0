@@ -1,0 +1,19 @@
+{
+  "positions" : [ {
+    "id" : "/RequestHello",
+    "x" : 290,
+    "y" : 2034
+  }, {
+    "id" : "/RequestHowAreYou",
+    "x" : 290,
+    "y" : 2642
+  }, {
+    "id" : "/RequestYourName",
+    "x" : 290,
+    "y" : 3313
+  }, {
+    "id" : "/RequestGoodBye",
+    "x" : 290,
+    "y" : 3920
+  } ]
+}

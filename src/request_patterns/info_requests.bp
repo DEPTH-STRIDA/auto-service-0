@@ -1,0 +1,27 @@
+{
+  "positions" : [ {
+    "id" : "/RequestServiceCost",
+    "x" : 290,
+    "y" : 4541
+  }, {
+    "id" : "/RequestServiceSchedule",
+    "x" : 290,
+    "y" : 5194
+  }, {
+    "id" : "/RequestServiceNeed",
+    "x" : 1850,
+    "y" : 1433
+  }, {
+    "id" : "/RequestServiceDiscounts",
+    "x" : 290,
+    "y" : 5831
+  }, {
+    "id" : "/RequestServiceDuration",
+    "x" : 290,
+    "y" : 6452
+  }, {
+    "id" : "/RequestServiceIncluded",
+    "x" : 290,
+    "y" : 7089
+  } ]
+}

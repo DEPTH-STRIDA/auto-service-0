@@ -1,0 +1,39 @@
+{
+  "positions" : [ {
+    "id" : "/ResponseReadyMessage",
+    "x" : 4970,
+    "y" : 1084
+  }, {
+    "id" : "/ResponseServiceMessage",
+    "x" : 4970,
+    "y" : 2441
+  }, {
+    "id" : "/ResponseSuccessRequest",
+    "x" : 6530,
+    "y" : 1102
+  }, {
+    "id" : "/ResponseErrorRequest",
+    "x" : 6530,
+    "y" : 2775
+  }, {
+    "id" : "/DeletePatronymic",
+    "x" : 1070,
+    "y" : 7710
+  }, {
+    "id" : "/DeleteLastName",
+    "x" : 1070,
+    "y" : 8319
+  }, {
+    "id" : "/DeleteFirstName",
+    "x" : 1070,
+    "y" : 8928
+  }, {
+    "id" : "/DeletePhone",
+    "x" : 1070,
+    "y" : 9537
+  }, {
+    "id" : "/DeleteCar",
+    "x" : 1070,
+    "y" : 10146
+  } ]
+}

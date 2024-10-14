@@ -1,0 +1,35 @@
+{
+  "positions" : [ {
+    "id" : "/ResponseStart",
+    "x" : 1070,
+    "y" : 738
+  }, {
+    "id" : "/ResponseNoMatch",
+    "x" : 1070,
+    "y" : 1429
+  }, {
+    "id" : "/ResponseMenu",
+    "x" : 2630,
+    "y" : 1411
+  }, {
+    "id" : "/ResponseHello",
+    "x" : 1070,
+    "y" : 2034
+  }, {
+    "id" : "/ResponseHowAreYou",
+    "x" : 1070,
+    "y" : 2642
+  }, {
+    "id" : "/ResponseYourName",
+    "x" : 1070,
+    "y" : 3313
+  }, {
+    "id" : "/ResponseGoodBye",
+    "x" : 1070,
+    "y" : 3920
+  }, {
+    "id" : "/ResponseHowAreYou/WaitMoodResponse",
+    "x" : 290,
+    "y" : 902
+  } ]
+}

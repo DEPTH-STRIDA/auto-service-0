@@ -1,0 +1,27 @@
+{
+  "positions" : [ {
+    "id" : "/RequestService",
+    "x" : 2630,
+    "y" : 756
+  }, {
+    "id" : "/RequestDeletePatronymic",
+    "x" : 290,
+    "y" : 7710
+  }, {
+    "id" : "/RequestDeleteLastName",
+    "x" : 290,
+    "y" : 8319
+  }, {
+    "id" : "/RequestDeleteFirstName",
+    "x" : 290,
+    "y" : 8928
+  }, {
+    "id" : "/RequestDeletePhone",
+    "x" : 290,
+    "y" : 9537
+  }, {
+    "id" : "/RequestDeleteCar",
+    "x" : 290,
+    "y" : 10146
+  } ]
+}

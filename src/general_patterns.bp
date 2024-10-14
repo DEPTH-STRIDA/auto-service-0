@@ -5,16 +5,16 @@
     "y" : 12
   }, {
     "id" : "/DeletePatronymic",
-    "x" : 290,
-    "y" : 3375
+    "x" : 1858,
+    "y" : 3980
   }, {
     "id" : "/DeleteLastName",
-    "x" : 290,
-    "y" : 4042
+    "x" : 2267,
+    "y" : 4261
   }, {
     "id" : "/DeleteFirstName",
-    "x" : 290,
-    "y" : 4709
+    "x" : 2277,
+    "y" : 3872
   }, {
     "id" : "/DeletePhone",
     "x" : 290,
