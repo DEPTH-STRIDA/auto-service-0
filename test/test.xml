@@ -1,75 +1,98 @@
-tests:
-  # Основной сценарий - Запись на ТО
-  - name: "Успешная запись на ТО"
-    steps:
-      - request: "хочу записаться на ТО"
-        state: "collectData"  # Бот начинает собирать данные
-        responseContains: "Пожалуйста, укажите марку вашего автомобиля"
+<?xml version="1.0" encoding="UTF-8"?>
+<tests>
+    <!-- Тест 1: Успешная запись на ТО -->
+    <test name="Успешная запись на ТО">
+        <step>
+            <request>хочу записаться на ТО</request>
+            <state>collectData</state>
+            <responseContains>Пожалуйста, укажите марку вашего автомобиля</responseContains>
+        </step>
+        <step>
+            <request>Шкода</request>
+            <state>collectData</state>
+            <responseContains>Укажите ваше имя и фамилию</responseContains>
+        </step>
+        <step>
+            <request>Иван Иванов</request>
+            <state>collectData</state>
+            <responseContains>Укажите ваш номер телефона</responseContains>
+        </step>
+        <step>
+            <request>79991234567</request>
+            <state>confirmData</state>
+            <responseContains>Оформляю заявку на техобслуживание на следующие данные</responseContains>
+        </step>
+    </test>
 
-      - request: "Шкода"
-        state: "collectData"
-        responseContains: "Укажите ваше имя и фамилию"
+    <!-- Тест 2: Отмена записи при слишком длинном запросе -->
+    <test name="Отмена записи на ТО при слишком длинном запросе">
+        <step>
+            <request>хочу записаться на техобслуживание моего автомобиля, который был куплен в 2020 году и пробег у него уже 15000 км</request>
+            <state>cancel</state>
+            <responseContains>Ваш запрос слишком длинный. Попробуйте ещё раз.</responseContains>
+        </step>
+    </test>
 
-      - request: "Иван Иванов"
-        state: "collectData"
-        responseContains: "Укажите ваш номер телефона"
+    <!-- Тест 3: Вопрос о стоимости техобслуживания -->
+    <test name="Вопрос о стоимости техобслуживания">
+        <step>
+            <request>Сколько стоит техобслуживание?</request>
+            <state>pricingInfo</state>
+            <responseContains>Стоимость обслуживания можно рассчитать по ссылке</responseContains>
+        </step>
+    </test>
 
-      - request: "79991234567"
-        state: "confirmData"
-        responseContains: "Оформляю заявку на техобслуживание на следующие данные: Иван Иванов, 79991234567, Шкода"
+    <!-- Тест 4: График технического обслуживания -->
+    <test name="График технического обслуживания">
+        <step>
+            <request>Когда делать ТО?</request>
+            <state>maintenanceSchedule</state>
+            <responseContains>График технического обслуживания можно узнать по ссылке</responseContains>
+        </step>
+    </test>
 
-  # Сценарий: Отмена записи при длинном запросе
-  - name: "Отмена записи на ТО при слишком длинном запросе"
-    steps:
-      - request: "хочу записаться на техобслуживание моего автомобиля, который был куплен в 2020 году и пробег у него уже 15000 км"
-        state: "cancel"  # Бот отменяет запрос
-        responseContains: "Ваш запрос слишком длинный. Попробуйте ещё раз."
+    <!-- Тест 5: Время выполнения ТО -->
+    <test name="Сколько по времени занимает ТО">
+        <step>
+            <request>Сколько времени занимает ТО?</request>
+            <state>timingInfo</state>
+            <responseContains>В среднем техническое обслуживание занимает 2 часа</responseContains>
+        </step>
+    </test>
 
-  # Сценарий: Вопрос-ответ о стоимости техобслуживания
-  - name: "Вопрос о стоимости техобслуживания"
-    steps:
-      - request: "Сколько стоит техобслуживание?"
-        state: "pricingInfo"  # Бот отвечает на вопрос о стоимости ТО
-        responseContains: "Стоимость обслуживания можно рассчитать по ссылке"
+    <!-- Тест 6: План работ при ТО -->
+    <test name="Что входит в плановое ТО?">
+        <step>
+            <request>Что входит в ТО?</request>
+            <state>maintenancePlan</state>
+            <responseContains>План работ технического обслуживания можно узнать по ссылке</responseContains>
+        </step>
+    </test>
 
-  # Сценарий: График технического обслуживания
-  - name: "График технического обслуживания"
-    steps:
-      - request: "Когда делать ТО?"
-        state: "maintenanceSchedule"  # Бот отвечает на вопрос о графике ТО
-        responseContains: "График технического обслуживания можно узнать по ссылке"
+    <!-- Тест 7: Приветствие -->
+    <test name="Приветствие">
+        <step>
+            <request>Привет</request>
+            <state>greeting</state>
+            <responseContains>Здравствуйте! Как я могу помочь?</responseContains>
+        </step>
+    </test>
 
-  # Сценарий: Вопрос о времени выполнения ТО
-  - name: "Сколько по времени занимает ТО"
-    steps:
-      - request: "Сколько времени занимает ТО?"
-        state: "timingInfo"  # Бот даёт информацию о длительности ТО
-        responseContains: "В среднем техническое обслуживание занимает 2 часа"
+    <!-- Тест 8: Как дела у бота? -->
+    <test name="Как дела у бота?">
+        <step>
+            <request>Как дела?</request>
+            <state>smallTalk</state>
+            <responseContains>Отлично! А у вас?</responseContains>
+        </step>
+    </test>
 
-  # Сценарий: План работ при ТО
-  - name: "Что входит в плановое ТО?"
-    steps:
-      - request: "Что входит в ТО?"
-        state: "maintenancePlan"  # Бот даёт информацию о плане работ
-        responseContains: "План работ технического обслуживания можно узнать по ссылке"
-
-  # Общекоммуникативный сценарий: Приветствие
-  - name: "Приветствие"
-    steps:
-      - request: "Привет"
-        state: "greeting"  # Бот отвечает на приветствие
-        responseContains: "Здравствуйте! Как я могу помочь?"
-
-  # Общекоммуникативный сценарий: Как дела?
-  - name: "Как дела у бота?"
-    steps:
-      - request: "Как дела?"
-        state: "smallTalk"  # Бот поддерживает разговор
-        responseContains: "Отлично! А у вас?"
-
-  # Общекоммуникативный сценарий: Знакомство
-  - name: "Как зовут бота?"
-    steps:
-      - request: "Как тебя зовут?"
-        state: "introduction"
-        responseContains: "Меня зовут Вася. А как вас зовут?"
+    <!-- Тест 9: Как зовут бота? -->
+    <test name="Как зовут бота?">
+        <step>
+            <request>Как тебя зовут?</request>
+            <state>introduction</state>
+            <responseContains>Меня зовут Вася. А как вас зовут?</responseContains>
+        </step>
+    </test>
+</tests>
