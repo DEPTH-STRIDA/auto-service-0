@@ -18,6 +18,10 @@
             <request>79991234567</request>
             <state>confirmData</state>
         </step>
+        <step>
+            <request>Отправить</request>
+            <state>confirmData</state>
+        </step>
     </test>
 
     <test name="Вопрос о стоимости техобслуживания">
