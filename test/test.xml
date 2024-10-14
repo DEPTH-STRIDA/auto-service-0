@@ -1,2 +1,60 @@
 <test>
-</test>    
+    <scenario name="Основной сценарий записи на ТО">
+        <step>
+            <query>Хочу записаться на ТО</query>
+            <response>Для оформления заявки на ТО, пожалуйста, введите:
+- имя, фамилию
+- телефон
+- марку автомобиля
+
+Вы можете указать все данные сразу или по одному.</response>
+        </step>
+        <step>
+            <query>Меня зовут Иван Петров, телефон 89001234567</query>
+            <response>Спасибо, Иван. Осталось указать марку автомобиля.</response>
+        </step>
+        <step>
+            <query>У меня Toyota Camry</query>
+            <response>Оформляю заявку на техобслуживание на следующие данные:
+Петров Иван
+номер телефона +79001234567
+автомобиль Toyota Camry
+
+Для изменения данных просто введите новую информацию.</response>
+        </step>
+        <step>
+            <query>Отправить</query>
+            <response>Заявка успешно отправлена.</response>
+        </step>
+    </scenario>
+
+    <scenario name="Общекоммуникативный мини-сценарий">
+        <step>
+            <query>Привет</query>
+            <response>Здравствуйте!</response>
+        </step>
+        <step>
+            <query>Как дела?</query>
+            <response>Отлично! А у вас?</response>
+        </step>
+        <step>
+            <query>Хорошо</query>
+            <response>Я рад. Теперь давайте поговорим про автомобили.</response>
+        </step>
+    </scenario>
+
+    <scenario name="Тематический мини-сценарий">
+        <step>
+            <query>Сколько стоит ТО?</query>
+            <response>Стоимость обслуживания можно рассчитать тут http://someautodealer/techservice#calculate</response>
+        </step>
+        <step>
+            <query>Когда нужно делать ТО?</query>
+            <response>График технического обслуживания можно узнать тут http://someautodealer/techservice</response>
+        </step>
+        <step>
+            <query>Зачем нужно ТО?</query>
+            <response>Техническое обслуживание нужно, чтобы предотвратить вероятность случайных поломок, а также произвести регулировку всех основных узлов и агрегатов, чтобы максимально снизить расход топлива и смазочных материалов.</response>
+        </step>
+    </scenario>
+</test>
