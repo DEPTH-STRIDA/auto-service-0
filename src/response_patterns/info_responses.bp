@@ -2,26 +2,26 @@
   "positions" : [ {
     "id" : "/ResponseServiceCost",
     "x" : 1070,
-    "y" : 4541
+    "y" : 3094
   }, {
     "id" : "/ResponseServiceSchedule",
     "x" : 1070,
-    "y" : 5194
+    "y" : 3747
   }, {
     "id" : "/ResponseServiceNeed",
-    "x" : 2630,
-    "y" : 2063
+    "x" : 1070,
+    "y" : 10044
   }, {
     "id" : "/ResponseServiceDiscounts",
     "x" : 1070,
-    "y" : 5831
+    "y" : 5076
   }, {
     "id" : "/ResponseServiceDuration",
     "x" : 1070,
-    "y" : 6452
+    "y" : 5697
   }, {
     "id" : "/ResponseServiceIncluded",
     "x" : 1070,
-    "y" : 7089
+    "y" : 6334
   } ]
 }

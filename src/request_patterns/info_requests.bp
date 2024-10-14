@@ -2,26 +2,26 @@
   "positions" : [ {
     "id" : "/RequestServiceCost",
     "x" : 290,
-    "y" : 4541
+    "y" : 3094
   }, {
     "id" : "/RequestServiceSchedule",
     "x" : 290,
-    "y" : 5194
+    "y" : 3747
   }, {
     "id" : "/RequestServiceNeed",
-    "x" : 1850,
-    "y" : 1433
+    "x" : 290,
+    "y" : 10044
   }, {
     "id" : "/RequestServiceDiscounts",
     "x" : 290,
-    "y" : 5831
+    "y" : 5076
   }, {
     "id" : "/RequestServiceDuration",
     "x" : 290,
-    "y" : 6452
+    "y" : 5697
   }, {
     "id" : "/RequestServiceIncluded",
     "x" : 290,
-    "y" : 7089
+    "y" : 6334
   } ]
 }

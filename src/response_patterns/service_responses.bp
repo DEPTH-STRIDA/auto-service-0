@@ -1,20 +1,20 @@
 {
   "positions" : [ {
     "id" : "/ResponseReadyMessage",
-    "x" : 4970,
-    "y" : 1084
+    "x" : 1850,
+    "y" : 3041
   }, {
     "id" : "/ResponseServiceMessage",
-    "x" : 4970,
-    "y" : 2441
+    "x" : 3410,
+    "y" : 3758
   }, {
     "id" : "/ResponseSuccessRequest",
-    "x" : 6530,
-    "y" : 1102
+    "x" : 3410,
+    "y" : 4378
   }, {
     "id" : "/ResponseErrorRequest",
-    "x" : 6530,
-    "y" : 2775
+    "x" : 3410,
+    "y" : 5032
   }, {
     "id" : "/DeletePatronymic",
     "x" : 1070,
@@ -35,5 +35,33 @@
     "id" : "/DeleteCar",
     "x" : 1070,
     "y" : 10146
+  }, {
+    "id" : "/ResponseDeleteCar",
+    "x" : 1070,
+    "y" : 9391
+  }, {
+    "id" : "/ResponseDeletePhone",
+    "x" : 1070,
+    "y" : 8782
+  }, {
+    "id" : "/ResponseService",
+    "x" : 1850,
+    "y" : 4412
+  }, {
+    "id" : "/ResponseSendRequest",
+    "x" : 2630,
+    "y" : 4705
+  }, {
+    "id" : "/ResponseDeletePatronymic",
+    "x" : 1070,
+    "y" : 6955
+  }, {
+    "id" : "/ResponseDeleteLastName",
+    "x" : 1070,
+    "y" : 7564
+  }, {
+    "id" : "/ResponseDeleteFirstName",
+    "x" : 1070,
+    "y" : 8173
   } ]
 }

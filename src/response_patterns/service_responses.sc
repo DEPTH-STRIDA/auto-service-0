@@ -4,7 +4,7 @@ require: slotfilling/slotFilling.sc
 theme: /
     
     state: ResponseService
-        q: * || fromState = "/Analyzer"
+        q: * 
         script:
             if ($entities && $entities.length > 0) {
                 var targetEntities = ["pymorphy.name", "mystem.famn", "pymorphy.patr", "duckling.phone-number", "Марка_автомобиля"];
@@ -83,23 +83,28 @@ theme: /
         script:
             $client.patronymic = "";
         a: Отчество удалено
+        go!: /ResponseService
 
     state: ResponseDeleteLastName
         script:
             $client.lastName = "";
         a: Фамилия удалена
+        go!: /ResponseService
 
     state: ResponseDeleteFirstName
         script:
             $client.firstName = "";
         a: Имя удалено
+        go!: /ResponseService
 
     state: ResponseDeletePhone
         script:
             $client.phone = "";
         a: Номер телефона удален
+        go!: /ResponseService
 
     state: ResponseDeleteCar
         script:
             $client.car = "";
         a: Марка автомобиля удалена
+        go!: /ResponseService

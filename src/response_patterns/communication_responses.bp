@@ -1,32 +1,32 @@
 {
   "positions" : [ {
     "id" : "/ResponseStart",
-    "x" : 1070,
-    "y" : 738
+    "x" : 3410,
+    "y" : 1621
   }, {
     "id" : "/ResponseNoMatch",
-    "x" : 1070,
-    "y" : 1429
+    "x" : 3410,
+    "y" : 2365
   }, {
     "id" : "/ResponseMenu",
-    "x" : 2630,
-    "y" : 1411
+    "x" : 4190,
+    "y" : 3444
   }, {
     "id" : "/ResponseHello",
     "x" : 1070,
-    "y" : 2034
+    "y" : 1261
   }, {
     "id" : "/ResponseHowAreYou",
     "x" : 1070,
-    "y" : 2642
+    "y" : 1868
   }, {
     "id" : "/ResponseYourName",
     "x" : 1070,
-    "y" : 3313
+    "y" : 656
   }, {
     "id" : "/ResponseGoodBye",
-    "x" : 1070,
-    "y" : 3920
+    "x" : 290,
+    "y" : 10650
   }, {
     "id" : "/ResponseHowAreYou/WaitMoodResponse",
     "x" : 290,

@@ -1,15 +1,4 @@
 theme: /
-    state: ResponseStart || sessionResult = "Сценарий начинается отсюда", sessionResultColor = "#143AD1"
-        q!: $regex</start>
-        script:
-            $client.firstName = ""
-            $client.lastName = ""
-            $client.patronymic=""
-            $client.phone = ""
-            
-        go!: /ResponseMenu
-        
-    
     state: RequestServiceCost
         q!: * {(стоимость|цена|сколько стоит) * $TO}
         q!: * {дорогое * $TO}

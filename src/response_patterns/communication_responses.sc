@@ -1,5 +1,6 @@
 theme: /
-    state: ResponseStart
+    state: ResponseStart || sessionResult = "Сценарий начинается отсюда", sessionResultColor = "#143AD1"
+        q!: $regex</start>
         a: Здравствуйте! Я виртуальный помощник автосервиса. 🔧
             
             Моя главная задача - помочь вам записаться на техническое обслуживание вашего автомобиля.
@@ -49,11 +50,11 @@ theme: /
 
     state: ResponseYourName
         a: Меня зовут Вася.
-        go: ./WaitNameResponse
+        go: /RequestUserName
         
-        state: WaitNameResponse
-            q: *
-            go!: /HandleName
-
+    state: ResponseUserName
+        a: Приятно познакомиться
+        go!:/ResponseMenu
+        
     state: ResponseGoodBye
         a: До свидания!
