@@ -18,4 +18,6 @@ theme: /
         q!: * $Goodbye *
         go!: /ResponseGoodBye
         
-        
+    state: noMatch
+        event!: noMatch
+        go!:ResponseNoMatch

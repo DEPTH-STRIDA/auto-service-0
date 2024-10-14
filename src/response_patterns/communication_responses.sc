@@ -19,7 +19,6 @@ theme: /
         go!: /ResponseMenu
 
     state: ResponseNoMatch
-        event!: noMatch
         a: Я не понял. Пожалуйста, перефразируйте вопрос.
         go!: /ResponseMenu
 
