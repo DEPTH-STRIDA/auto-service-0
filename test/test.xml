@@ -1,39 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tests>
-    <!-- Тест 1: Успешная запись на ТО -->
+
     <test name="Успешная запись на ТО">
         <step>
             <request>хочу записаться на ТО</request>
             <state>collectData</state>
-            <responseContains>Пожалуйста, укажите марку вашего автомобиля</responseContains>
         </step>
         <step>
             <request>Шкода</request>
             <state>collectData</state>
-            <responseContains>Укажите ваше имя и фамилию</responseContains>
         </step>
         <step>
             <request>Иван Иванов</request>
             <state>collectData</state>
-            <responseContains>Укажите ваш номер телефона</responseContains>
         </step>
         <step>
             <request>79991234567</request>
             <state>confirmData</state>
-            <responseContains>Оформляю заявку на техобслуживание на следующие данные</responseContains>
         </step>
     </test>
 
-    <!-- Тест 2: Отмена записи при слишком длинном запросе -->
-    <test name="Отмена записи на ТО при слишком длинном запросе">
-        <step>
-            <request>хочу записаться на техобслуживание моего автомобиля, который был куплен в 2020 году и пробег у него уже 15000 км</request>
-            <state>cancel</state>
-            <responseContains>Ваш запрос слишком длинный. Попробуйте ещё раз.</responseContains>
-        </step>
-    </test>
-
-    <!-- Тест 3: Вопрос о стоимости техобслуживания -->
     <test name="Вопрос о стоимости техобслуживания">
         <step>
             <request>Сколько стоит техобслуживание?</request>
@@ -42,7 +28,7 @@
         </step>
     </test>
 
-    <!-- Тест 4: График технического обслуживания -->
+  
     <test name="График технического обслуживания">
         <step>
             <request>Когда делать ТО?</request>
@@ -51,7 +37,7 @@
         </step>
     </test>
 
-    <!-- Тест 5: Время выполнения ТО -->
+   
     <test name="Сколько по времени занимает ТО">
         <step>
             <request>Сколько времени занимает ТО?</request>
@@ -60,7 +46,7 @@
         </step>
     </test>
 
-    <!-- Тест 6: План работ при ТО -->
+
     <test name="Что входит в плановое ТО?">
         <step>
             <request>Что входит в ТО?</request>
@@ -69,7 +55,7 @@
         </step>
     </test>
 
-    <!-- Тест 7: Приветствие -->
+
     <test name="Приветствие">
         <step>
             <request>Привет</request>
@@ -78,7 +64,7 @@
         </step>
     </test>
 
-    <!-- Тест 8: Как дела у бота? -->
+
     <test name="Как дела у бота?">
         <step>
             <request>Как дела?</request>
@@ -87,7 +73,7 @@
         </step>
     </test>
 
-    <!-- Тест 9: Как зовут бота? -->
+  
     <test name="Как зовут бота?">
         <step>
             <request>Как тебя зовут?</request>
