@@ -16,6 +16,6 @@ theme: /
 
     state: RequestGoodBye 
         q!: * $Goodbye *
-        go!: /ResponseUserName
+        go!: /ResponseGoodBye
         
         
